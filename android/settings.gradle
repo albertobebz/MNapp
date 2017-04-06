@@ -1,0 +1,3 @@
+rootProject.name = 'mnapp'
+
+include ':app'

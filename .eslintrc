@@ -1,0 +1,4 @@
+# settings for ESlint for this particular project
+{
+  "extends": "rallycoding"
+}
