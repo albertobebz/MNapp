@@ -36,6 +36,6 @@ const styles = {
   listStyle: {
     backgroundColor: 'purple'
   }
-}
+};
 
 export default TopicList;

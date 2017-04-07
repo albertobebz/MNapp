@@ -1,1 +1,4 @@
-// Index.android.js code for Android
+import { AppRegistry } from 'react-native';
+import App from './src/app';
+
+AppRegistry.registerComponent('mnapp', () => App);
