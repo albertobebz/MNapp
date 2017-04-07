@@ -25,10 +25,16 @@ class TopicList extends Component {
 
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={styles.listStyle}>
         {this.renderThreads()}
       </ScrollView>
     );
+  }
+}
+
+const styles = {
+  listStyle: {
+    backgroundColor: 'purple'
   }
 }
 

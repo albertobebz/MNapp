@@ -10,10 +10,10 @@ import TopicList from './src/components/TopicList';
 
 // create a component
 const App = () => {
-  const { appContainerStyle, flexStyle } = styles;
+  const { flexStyle } = styles;
 
   return (
-    <View style={[appContainerStyle, flexStyle]}>
+    <View style={flexStyle}>
       <Header headerText={'Mumsnet App'} />
       <TopicList />
     </View>
@@ -21,9 +21,6 @@ const App = () => {
 };
 
 const styles = {
-  appContainerStyle: {
-    backgroundColor: 'purple'
-  },
   flexStyle: {
     flex: 1
   }
