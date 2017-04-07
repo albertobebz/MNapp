@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
+import ThreadDetail from './ThreadDetail';
 
 class TopicList extends Component {
   state = {
@@ -17,15 +18,16 @@ class TopicList extends Component {
   }
 
   renderThreads() {
-    return this.state.threads.map(thread => <Text>{thread.thread.name}</Text>);
+    return this.state.threads.map(thread =>
+      <ThreadDetail key={thread.thread.id} thread={thread.thread} />
+    );
   }
 
   render() {
-
     return (
-      <View>
+      <ScrollView>
         {this.renderThreads()}
-      </View>
+      </ScrollView>
     );
   }
 }

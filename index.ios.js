@@ -10,13 +10,24 @@ import TopicList from './src/components/TopicList';
 
 // create a component
 const App = () => {
+  const { appContainerStyle, flexStyle } = styles;
+
   return (
-    <View>
+    <View style={[appContainerStyle, flexStyle]}>
       <Header headerText={'Mumsnet App'} />
       <TopicList />
     </View>
   );
 };
+
+const styles = {
+  appContainerStyle: {
+    backgroundColor: 'purple'
+  },
+  flexStyle: {
+    flex: 1
+  }
+}
 
 // render it to the device
 AppRegistry.registerComponent('mnapp', () => App);
