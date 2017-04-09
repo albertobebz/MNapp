@@ -6,7 +6,7 @@ const ThreadDetail = (props) => {
 
   return (
     <View style={containerStyle}>
-      <Text style={whatchedStyle}>{props.thread.watched}</Text>
+      <Text style={whatchedStyle}>{props.thread.num_posts}</Text>
       <View>
         <Text style={[textStyle, topicStyle]}>{props.thread.topic_url}</Text>
         <Text style={[textStyle, nameStyle]}>{props.thread.name}</Text>
